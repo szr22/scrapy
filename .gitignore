@@ -1,5 +1,2 @@
 .vscode/settings.json
-m1_d05_intro_spider/m1_d05_intro_spider/__pycache__/__init__.cpython-37.pyc
-m1_d05_intro_spider/m1_d05_intro_spider/__pycache__/settings.cpython-37.pyc
-m1_d05_intro_spider/m1_d05_intro_spider/spiders/__pycache__/__init__.cpython-37.pyc
-m1_d05_intro_spider/m1_d05_intro_spider/spiders/__pycache__/intro_spider.cpython-37.pyc
+*.pyc

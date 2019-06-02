@@ -18,10 +18,8 @@ class IntroSpider(scrapy.Spider):
             yield scrapy.Request(url = url, callback = self.parse)
 
     def parse(self, response):
-        print(response)
         book_list = response.css('article.product_pod > h3 > a::attr(title)').extract()
         
-        # print(book_list)
         with open(filename, 'a+') as f:
             for book_title in book_list:
                 f.write(book_title + '\n')
