@@ -29,7 +29,7 @@ class ProductDetails(scrapy.Spider):
 
             short_link = 'https://amazon.com/dp/' + product_id
 
-            cny_price = round(float(price[1:].replace(',', '')) / USDCNY, 2)
+            cny_price = round(float(price[1:].replace(',', '')) * USDCNY, 2)
             # print(cny_price)
            
             productItem = ProductItem()

@@ -12,7 +12,7 @@ USDCNY = 6.80
 
 def convert_price(price):
     if price:
-        return round(float(price[1:].replace(',', '')) / USDCNY,2)
+        return round(float(price[1:].replace(',', '')) * USDCNY,2)
 
 def shorten_amazon_link(link):
     product_id = link.split('/')[-1]
